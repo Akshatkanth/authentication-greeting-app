@@ -29,7 +29,7 @@ export default async function handler(req, res) {
   });
 
   // Send OTP email
-  const transporter = nodemailer.createTransport({
+  /*const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'your-email@gmail.com',     // replace with your Gmail
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
     to: email,
     subject: 'Your OTP Code',
     html: `<h3>Hello ${name},</h3><p>Your OTP is: <strong>${otp}</strong></p>`
-  });
+  });*/
 
   return res.status(200).json({ message: "Registered. OTP sent to email." });
 }
