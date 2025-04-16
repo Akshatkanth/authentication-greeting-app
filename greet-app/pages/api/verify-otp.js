@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   // Check if OTP matches
   if (user.otp === otp) {
     // OTP is correct, mark the user as verified
-    user.verified = true; // Add a verified field if it doesn't exist
+    user.isVerified = true; // Add a verified field if it doesn't exist
     user.otp = null; // Clear OTP after verification
     await user.save();
 
