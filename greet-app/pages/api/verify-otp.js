@@ -1,4 +1,4 @@
-// pages/api/verifyOtp.js
+// pages/api/verify-otp.js
 import dbConnect from "@/lib/dbConnect";
 import User from "@/models/User";
 
